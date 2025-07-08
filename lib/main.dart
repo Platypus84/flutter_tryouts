@@ -41,7 +41,11 @@ class MainApp extends StatelessWidget {
                   endIndent: null,
                   color: Color.fromARGB(170, 0, 255, 115),
                 ),
-                SizedBox(width: 100, height: 100),
+                SizedBox(
+                  width: 100,
+                  height: 100,
+                  child: Text('Das ist eine Sized Box'),
+                ),
               ],
             ),
             decoration: BoxDecoration(
