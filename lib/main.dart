@@ -12,27 +12,105 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+
         appBar: AppBar(
-          title: Text('Ich mach die Flatter...'),
+          title: Text('Ich mach die Flatter... (Aufgabe 1)'),
           foregroundColor: Color.fromARGB(255, 255, 255, 255),
-          backgroundColor: Color.fromARGB(255, 147, 10, 10),
+          backgroundColor: Color.fromARGB(255, 33, 156, 250),
         ),
-        body: Center(
+
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Container(
-            width: 180,
-            height: 500,
             child: Column(
               children: [
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(
-                      'Hallo Welt!',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Color.fromRGBO(250, 250, 0, 1.0),
+                    SizedBox(
+                      height: 80,
+                      child: Text(
+                        'Hallo App Akademie!',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900,
+                          color: Color.from(
+                            alpha: 1,
+                            red: 0.341,
+                            green: 0.659,
+                            blue: 1,
+                          ),
+                        ),
                       ),
                     ),
-                    Checkbox(value: true, onChanged: (_) {}),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Container(
+                        color: Colors.red,
+                        height: 100,
+                        width: 100,
+                        // child: Container(
+                        //   height: 20,
+                        //   width: 20,
+                        //   color: Colors.grey,
+                        // ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Container(
+                        color: Colors.green,
+                        height: 100,
+                        width: 100,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Container(
+                        color: Colors.blue,
+                        height: 100,
+                        width: 100,
+                      ),
+                    ),
+
+                    // Checkbox(value: true, onChanged: (_) {}),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+
+                  children: [
+                    // Text(
+                    //   'Hallo Welt!',
+                    //   style: TextStyle(
+                    //     fontSize: 20,
+                    //     color: Color.fromRGBO(250, 250, 0, 1.0),
+                    //   ),
+                    // ),
+                    // Checkbox(value: true, onChanged: (_) {}),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 32.0,
+                        right: 32.0,
+                        top: 16.0,
+                      ),
+                      child: Icon(Icons.face, size: 32),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 32.0,
+                        right: 32.0,
+                        top: 16.0,
+                      ),
+                      child: Icon(Icons.face, size: 32),
+                    ),
                   ],
                 ),
                 Divider(
@@ -48,17 +126,17 @@ class MainApp extends StatelessWidget {
                 ),
               ],
             ),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.green, Colors.red],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomLeft,
-              ),
-            ),
+            // decoration: BoxDecoration(
+            //   gradient: LinearGradient(
+            //     colors: [Colors.white, Colors.grey],
+            //     begin: Alignment.topLeft,
+            //     end: Alignment.bottomLeft,
+            //   ),
+            // ),
           ),
         ),
+
         bottomNavigationBar: BottomAppBar(),
-        backgroundColor: Color(0xffaabbcc),
       ),
     );
   }
