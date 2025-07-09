@@ -28,55 +28,80 @@ class MainApp extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 80,
-                      child: Text(
-                        'Hallo App Akademie!',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w900,
-                          color: Color.from(
-                            alpha: 1,
-                            red: 0.341,
-                            green: 0.659,
-                            blue: 1,
-                          ),
+                    SizedBox(height: 100),
+                    Text(
+                      'Hallo App Akademie!',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: Color.from(
+                          alpha: 1,
+                          red: 0.341,
+                          green: 0.659,
+                          blue: 1,
                         ),
                       ),
                     ),
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 10.0),
                       child: Container(
+                        alignment: Alignment.center,
                         color: Colors.red,
                         height: 100,
                         width: 100,
-                        // child: Container(
-                        //   height: 20,
-                        //   width: 20,
-                        //   color: Colors.grey,
-                        // ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.deepPurple,
+                          ),
+                          height: 20,
+                          width: 40,
+                          alignment: Alignment.center,
+                          child: Text('A'),
+                        ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 10.0),
                       child: Container(
+                        alignment: Alignment.center,
                         color: Colors.green,
                         height: 100,
                         width: 100,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.deepPurple,
+                          ),
+                          height: 20,
+                          width: 40,
+                          alignment: Alignment.center,
+                          child: Text('A'),
+                        ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 10.0),
                       child: Container(
+                        alignment: Alignment.center,
                         color: Colors.blue,
                         height: 100,
                         width: 100,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            color: Colors.deepPurple,
+                          ),
+                          height: 20,
+                          width: 40,
+                          alignment: Alignment.center,
+                          child: Text('A'),
+                        ),
                       ),
                     ),
 
